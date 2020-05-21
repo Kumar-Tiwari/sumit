@@ -1,0 +1,50 @@
+<html>
+<head>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+
+<button id='news' type="submit">get news</button>
+<button id='data' type="submit">get data</button>
+
+
+<div id='display'>
+
+</div>
+<script>
+
+$("#news").click(function(){
+
+    $.ajax({
+        url: '',
+        dataType: 'json',
+        success: function (data1) {
+            $("#display").text(data1.data)
+          }
+      });
+})
+
+</script>
+
+
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</body>
+</html>
